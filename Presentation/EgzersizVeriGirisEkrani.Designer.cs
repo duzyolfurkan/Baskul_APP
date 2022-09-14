@@ -1,7 +1,7 @@
 ﻿
 namespace Presentation
 {
-    partial class SuIcmeVerileriGirisEkrani
+    partial class EgzersizVeriGirisEkrani
     {
         /// <summary>
         /// Required designer variable.
@@ -29,47 +29,51 @@ namespace Presentation
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SuIcmeVerileriGirisEkrani));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EgzersizVeriGirisEkrani));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txt_bardakHacmi = new System.Windows.Forms.TextBox();
+            this.txt_egzersizAdi = new System.Windows.Forms.TextBox();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.rtb_yorumGoruntuleme = new System.Windows.Forms.RichTextBox();
             this.btn_diyetisyenYorumGoruntule = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dtp_yorumTarihi = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.btn_cikis = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.txt_bardakAdet = new System.Windows.Forms.TextBox();
+            this.txt_egzersizSuresi = new System.Windows.Forms.TextBox();
             this.btn_ekle = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel13 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.dtp_suTarih = new Bunifu.UI.WinForms.BunifuDatePicker();
+            this.lbl = new Bunifu.UI.WinForms.BunifuLabel();
+            this.dtp_egzersizTarih = new Bunifu.UI.WinForms.BunifuDatePicker();
+            this.txt_egzersizMiktari = new System.Windows.Forms.TextBox();
+            this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.panel1.Controls.Add(this.txt_bardakHacmi);
+            this.panel1.Controls.Add(this.txt_egzersizMiktari);
+            this.panel1.Controls.Add(this.bunifuLabel3);
+            this.panel1.Controls.Add(this.txt_egzersizAdi);
             this.panel1.Controls.Add(this.bunifuLabel2);
             this.panel1.Controls.Add(this.rtb_yorumGoruntuleme);
             this.panel1.Controls.Add(this.btn_diyetisyenYorumGoruntule);
             this.panel1.Controls.Add(this.dtp_yorumTarihi);
             this.panel1.Controls.Add(this.btn_cikis);
-            this.panel1.Controls.Add(this.txt_bardakAdet);
+            this.panel1.Controls.Add(this.txt_egzersizSuresi);
             this.panel1.Controls.Add(this.btn_ekle);
             this.panel1.Controls.Add(this.bunifuLabel1);
-            this.panel1.Controls.Add(this.bunifuLabel13);
-            this.panel1.Controls.Add(this.dtp_suTarih);
-            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Controls.Add(this.lbl);
+            this.panel1.Controls.Add(this.dtp_egzersizTarih);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(438, 235);
-            this.panel1.TabIndex = 7;
+            this.panel1.Size = new System.Drawing.Size(438, 260);
+            this.panel1.TabIndex = 8;
             // 
-            // txt_bardakHacmi
+            // txt_egzersizAdi
             // 
-            this.txt_bardakHacmi.Location = new System.Drawing.Point(12, 102);
-            this.txt_bardakHacmi.Name = "txt_bardakHacmi";
-            this.txt_bardakHacmi.Size = new System.Drawing.Size(172, 20);
-            this.txt_bardakHacmi.TabIndex = 54;
+            this.txt_egzersizAdi.Location = new System.Drawing.Point(12, 102);
+            this.txt_egzersizAdi.Name = "txt_egzersizAdi";
+            this.txt_egzersizAdi.Size = new System.Drawing.Size(172, 20);
+            this.txt_egzersizAdi.TabIndex = 54;
             // 
             // bunifuLabel2
             // 
@@ -164,7 +168,7 @@ namespace Presentation
             this.btn_cikis.IdleForecolor = System.Drawing.Color.Black;
             this.btn_cikis.IdleLineColor = System.Drawing.Color.Gold;
             this.btn_cikis.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_cikis.Location = new System.Drawing.Point(97, 170);
+            this.btn_cikis.Location = new System.Drawing.Point(98, 215);
             this.btn_cikis.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cikis.Name = "btn_cikis";
             this.btn_cikis.Size = new System.Drawing.Size(72, 36);
@@ -172,12 +176,12 @@ namespace Presentation
             this.btn_cikis.TabStop = false;
             this.btn_cikis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txt_bardakAdet
+            // txt_egzersizSuresi
             // 
-            this.txt_bardakAdet.Location = new System.Drawing.Point(12, 143);
-            this.txt_bardakAdet.Name = "txt_bardakAdet";
-            this.txt_bardakAdet.Size = new System.Drawing.Size(172, 20);
-            this.txt_bardakAdet.TabIndex = 47;
+            this.txt_egzersizSuresi.Location = new System.Drawing.Point(12, 143);
+            this.txt_egzersizSuresi.Name = "txt_egzersizSuresi";
+            this.txt_egzersizSuresi.Size = new System.Drawing.Size(172, 20);
+            this.txt_egzersizSuresi.TabIndex = 47;
             // 
             // btn_ekle
             // 
@@ -198,7 +202,7 @@ namespace Presentation
             this.btn_ekle.IdleForecolor = System.Drawing.Color.Black;
             this.btn_ekle.IdleLineColor = System.Drawing.Color.Gold;
             this.btn_ekle.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_ekle.Location = new System.Drawing.Point(17, 170);
+            this.btn_ekle.Location = new System.Drawing.Point(18, 215);
             this.btn_ekle.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ekle.Name = "btn_ekle";
             this.btn_ekle.Size = new System.Drawing.Size(72, 36);
@@ -215,60 +219,82 @@ namespace Presentation
             this.bunifuLabel1.Location = new System.Drawing.Point(12, 126);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(67, 16);
+            this.bunifuLabel1.Size = new System.Drawing.Size(71, 16);
             this.bunifuLabel1.TabIndex = 44;
-            this.bunifuLabel1.Text = "Bardak Adet";
+            this.bunifuLabel1.Text = "Egzersiz Süresi";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel13
+            // lbl
             // 
-            this.bunifuLabel13.AllowParentOverrides = false;
-            this.bunifuLabel13.AutoEllipsis = false;
-            this.bunifuLabel13.CursorType = null;
-            this.bunifuLabel13.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bunifuLabel13.Location = new System.Drawing.Point(14, 85);
-            this.bunifuLabel13.Name = "bunifuLabel13";
-            this.bunifuLabel13.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel13.Size = new System.Drawing.Size(102, 16);
-            this.bunifuLabel13.TabIndex = 25;
-            this.bunifuLabel13.Text = "Bardak Hacmi (mL)";
-            this.bunifuLabel13.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel13.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lbl.AllowParentOverrides = false;
+            this.lbl.AutoEllipsis = false;
+            this.lbl.CursorType = null;
+            this.lbl.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl.Location = new System.Drawing.Point(14, 85);
+            this.lbl.Name = "lbl";
+            this.lbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbl.Size = new System.Drawing.Size(59, 16);
+            this.lbl.TabIndex = 25;
+            this.lbl.Text = "Egzersiz Adı";
+            this.lbl.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lbl.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // dtp_suTarih
+            // dtp_egzersizTarih
             // 
-            this.dtp_suTarih.BackColor = System.Drawing.Color.Transparent;
-            this.dtp_suTarih.BorderColor = System.Drawing.Color.Silver;
-            this.dtp_suTarih.BorderRadius = 1;
-            this.dtp_suTarih.Color = System.Drawing.Color.Silver;
-            this.dtp_suTarih.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
-            this.dtp_suTarih.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.dtp_suTarih.DisabledColor = System.Drawing.Color.Gray;
-            this.dtp_suTarih.DisplayWeekNumbers = false;
-            this.dtp_suTarih.DPHeight = 0;
-            this.dtp_suTarih.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtp_suTarih.FillDatePicker = false;
-            this.dtp_suTarih.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtp_suTarih.ForeColor = System.Drawing.Color.Black;
-            this.dtp_suTarih.Icon = ((System.Drawing.Image)(resources.GetObject("dtp_suTarih.Icon")));
-            this.dtp_suTarih.IconColor = System.Drawing.Color.Gray;
-            this.dtp_suTarih.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.dtp_suTarih.LeftTextMargin = 5;
-            this.dtp_suTarih.Location = new System.Drawing.Point(12, 42);
-            this.dtp_suTarih.MinimumSize = new System.Drawing.Size(4, 32);
-            this.dtp_suTarih.Name = "dtp_suTarih";
-            this.dtp_suTarih.Size = new System.Drawing.Size(172, 32);
-            this.dtp_suTarih.TabIndex = 41;
+            this.dtp_egzersizTarih.BackColor = System.Drawing.Color.Transparent;
+            this.dtp_egzersizTarih.BorderColor = System.Drawing.Color.Silver;
+            this.dtp_egzersizTarih.BorderRadius = 1;
+            this.dtp_egzersizTarih.Color = System.Drawing.Color.Silver;
+            this.dtp_egzersizTarih.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
+            this.dtp_egzersizTarih.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
+            this.dtp_egzersizTarih.DisabledColor = System.Drawing.Color.Gray;
+            this.dtp_egzersizTarih.DisplayWeekNumbers = false;
+            this.dtp_egzersizTarih.DPHeight = 0;
+            this.dtp_egzersizTarih.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtp_egzersizTarih.FillDatePicker = false;
+            this.dtp_egzersizTarih.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtp_egzersizTarih.ForeColor = System.Drawing.Color.Black;
+            this.dtp_egzersizTarih.Icon = ((System.Drawing.Image)(resources.GetObject("dtp_egzersizTarih.Icon")));
+            this.dtp_egzersizTarih.IconColor = System.Drawing.Color.Gray;
+            this.dtp_egzersizTarih.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
+            this.dtp_egzersizTarih.LeftTextMargin = 5;
+            this.dtp_egzersizTarih.Location = new System.Drawing.Point(12, 42);
+            this.dtp_egzersizTarih.MinimumSize = new System.Drawing.Size(4, 32);
+            this.dtp_egzersizTarih.Name = "dtp_egzersizTarih";
+            this.dtp_egzersizTarih.Size = new System.Drawing.Size(172, 32);
+            this.dtp_egzersizTarih.TabIndex = 41;
             // 
-            // SuIcmeVerileriGirisEkrani
+            // txt_egzersizMiktari
+            // 
+            this.txt_egzersizMiktari.Location = new System.Drawing.Point(12, 187);
+            this.txt_egzersizMiktari.Name = "txt_egzersizMiktari";
+            this.txt_egzersizMiktari.Size = new System.Drawing.Size(172, 20);
+            this.txt_egzersizMiktari.TabIndex = 56;
+            // 
+            // bunifuLabel3
+            // 
+            this.bunifuLabel3.AllowParentOverrides = false;
+            this.bunifuLabel3.AutoEllipsis = false;
+            this.bunifuLabel3.CursorType = null;
+            this.bunifuLabel3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bunifuLabel3.Location = new System.Drawing.Point(12, 170);
+            this.bunifuLabel3.Name = "bunifuLabel3";
+            this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel3.Size = new System.Drawing.Size(150, 16);
+            this.bunifuLabel3.TabIndex = 55;
+            this.bunifuLabel3.Text = "Egzersiz Miktarı (Tekrar Sayısı)";
+            this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // EgzersizVeriGirisEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 236);
+            this.ClientSize = new System.Drawing.Size(438, 260);
             this.Controls.Add(this.panel1);
-            this.Name = "SuIcmeVerileriGirisEkrani";
-            this.Text = "SuIcmeVerileriGirisEkrani";
+            this.Name = "EgzersizVeriGirisEkrani";
+            this.Text = "EgzersizVeriGirisEkrani";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -278,16 +304,18 @@ namespace Presentation
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txt_bardakHacmi;
+        private System.Windows.Forms.TextBox txt_egzersizAdi;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private System.Windows.Forms.RichTextBox rtb_yorumGoruntuleme;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_diyetisyenYorumGoruntule;
         private Bunifu.UI.WinForms.BunifuDatePicker dtp_yorumTarihi;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_cikis;
-        private System.Windows.Forms.TextBox txt_bardakAdet;
+        private System.Windows.Forms.TextBox txt_egzersizSuresi;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_ekle;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel13;
-        private Bunifu.UI.WinForms.BunifuDatePicker dtp_suTarih;
+        private Bunifu.UI.WinForms.BunifuLabel lbl;
+        private Bunifu.UI.WinForms.BunifuDatePicker dtp_egzersizTarih;
+        private System.Windows.Forms.TextBox txt_egzersizMiktari;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
     }
 }

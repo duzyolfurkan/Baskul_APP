@@ -58,7 +58,7 @@ namespace Presentation
             this.btn_cikis = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_egzersizGir = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_suTakip = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btn_coinBakiyesi = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btn_randevuGoruntule = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_olcuGirisi = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_tarifler = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_ogunGirisi = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -95,7 +95,7 @@ namespace Presentation
             this.panel1.Controls.Add(this.btn_cikis);
             this.panel1.Controls.Add(this.btn_egzersizGir);
             this.panel1.Controls.Add(this.btn_suTakip);
-            this.panel1.Controls.Add(this.btn_coinBakiyesi);
+            this.panel1.Controls.Add(this.btn_randevuGoruntule);
             this.panel1.Controls.Add(this.btn_olcuGirisi);
             this.panel1.Controls.Add(this.btn_tarifler);
             this.panel1.Controls.Add(this.btn_ogunGirisi);
@@ -554,31 +554,31 @@ namespace Presentation
             this.btn_suTakip.TabStop = false;
             this.btn_suTakip.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btn_coinBakiyesi
+            // btn_randevuGoruntule
             // 
-            this.btn_coinBakiyesi.ActiveBorderThickness = 1;
-            this.btn_coinBakiyesi.ActiveCornerRadius = 20;
-            this.btn_coinBakiyesi.ActiveFillColor = System.Drawing.Color.Goldenrod;
-            this.btn_coinBakiyesi.ActiveForecolor = System.Drawing.Color.Black;
-            this.btn_coinBakiyesi.ActiveLineColor = System.Drawing.Color.Goldenrod;
-            this.btn_coinBakiyesi.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.btn_coinBakiyesi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_coinBakiyesi.BackgroundImage")));
-            this.btn_coinBakiyesi.ButtonText = "Coin Görüntüle";
-            this.btn_coinBakiyesi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_coinBakiyesi.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_coinBakiyesi.ForeColor = System.Drawing.Color.Black;
-            this.btn_coinBakiyesi.IdleBorderThickness = 1;
-            this.btn_coinBakiyesi.IdleCornerRadius = 20;
-            this.btn_coinBakiyesi.IdleFillColor = System.Drawing.Color.Gold;
-            this.btn_coinBakiyesi.IdleForecolor = System.Drawing.Color.Black;
-            this.btn_coinBakiyesi.IdleLineColor = System.Drawing.Color.Gold;
-            this.btn_coinBakiyesi.Location = new System.Drawing.Point(535, 101);
-            this.btn_coinBakiyesi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_coinBakiyesi.Name = "btn_coinBakiyesi";
-            this.btn_coinBakiyesi.Size = new System.Drawing.Size(123, 36);
-            this.btn_coinBakiyesi.TabIndex = 36;
-            this.btn_coinBakiyesi.TabStop = false;
-            this.btn_coinBakiyesi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_randevuGoruntule.ActiveBorderThickness = 1;
+            this.btn_randevuGoruntule.ActiveCornerRadius = 20;
+            this.btn_randevuGoruntule.ActiveFillColor = System.Drawing.Color.Goldenrod;
+            this.btn_randevuGoruntule.ActiveForecolor = System.Drawing.Color.Black;
+            this.btn_randevuGoruntule.ActiveLineColor = System.Drawing.Color.Goldenrod;
+            this.btn_randevuGoruntule.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.btn_randevuGoruntule.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_randevuGoruntule.BackgroundImage")));
+            this.btn_randevuGoruntule.ButtonText = "Randevu Görüntüle";
+            this.btn_randevuGoruntule.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_randevuGoruntule.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_randevuGoruntule.ForeColor = System.Drawing.Color.Black;
+            this.btn_randevuGoruntule.IdleBorderThickness = 1;
+            this.btn_randevuGoruntule.IdleCornerRadius = 20;
+            this.btn_randevuGoruntule.IdleFillColor = System.Drawing.Color.Gold;
+            this.btn_randevuGoruntule.IdleForecolor = System.Drawing.Color.Black;
+            this.btn_randevuGoruntule.IdleLineColor = System.Drawing.Color.Gold;
+            this.btn_randevuGoruntule.Location = new System.Drawing.Point(535, 101);
+            this.btn_randevuGoruntule.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_randevuGoruntule.Name = "btn_randevuGoruntule";
+            this.btn_randevuGoruntule.Size = new System.Drawing.Size(123, 36);
+            this.btn_randevuGoruntule.TabIndex = 36;
+            this.btn_randevuGoruntule.TabStop = false;
+            this.btn_randevuGoruntule.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_olcuGirisi
             // 
@@ -943,7 +943,7 @@ namespace Presentation
         private Bunifu.Framework.UI.BunifuThinButton2 btn_cikis;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_egzersizGir;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_suTakip;
-        private Bunifu.Framework.UI.BunifuThinButton2 btn_coinBakiyesi;
+        private Bunifu.Framework.UI.BunifuThinButton2 btn_randevuGoruntule;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_olcuGirisi;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_tarifler;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_ogunGirisi;

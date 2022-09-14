@@ -226,17 +226,107 @@
     <Compile Include="DanisanAnketFormu.Designer.cs">
       <DependentUpon>DanisanAnketFormu.cs</DependentUpon>
     </Compile>
+    <Compile Include="DanisanlarinEgzersizVerileriFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanisanlarinEgzersizVerileriFormu.Designer.cs">
+      <DependentUpon>DanisanlarinEgzersizVerileriFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanisanlarinOgunVerileriniGoruntulemeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanisanlarinOgunVerileriniGoruntulemeForm.Designer.cs">
+      <DependentUpon>DanisanlarinOgunVerileriniGoruntulemeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanisanlarinOlcuVerilerininGoruntulenmesiFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanisanlarinOlcuVerilerininGoruntulenmesiFormu.Designer.cs">
+      <DependentUpon>DanisanlarinOlcuVerilerininGoruntulenmesiFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanisanlarinSuVerileriFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanisanlarinSuVerileriFormu.Designer.cs">
+      <DependentUpon>DanisanlarinSuVerileriFormu.cs</DependentUpon>
+    </Compile>
     <Compile Include="DanisanProfilFormu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DanisanProfilFormu.Designer.cs">
       <DependentUpon>DanisanProfilFormu.cs</DependentUpon>
     </Compile>
+    <Compile Include="DanisanRandevuGoruntulemeEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanisanRandevuGoruntulemeEkrani.Designer.cs">
+      <DependentUpon>DanisanRandevuGoruntulemeEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanisanSuVerileriniGoruntuleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanisanSuVerileriniGoruntuleme.Designer.cs">
+      <DependentUpon>DanisanSuVerileriniGoruntuleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiyetisyenAnketGoruntulemeEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiyetisyenAnketGoruntulemeEkrani.Designer.cs">
+      <DependentUpon>DiyetisyenAnketGoruntulemeEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiyetisyenCoinEklemeFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiyetisyenCoinEklemeFormu.Designer.cs">
+      <DependentUpon>DiyetisyenCoinEklemeFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiyetisyeneSoruSormaEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiyetisyeneSoruSormaEkrani.Designer.cs">
+      <DependentUpon>DiyetisyeneSoruSormaEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiyetisyenProfilFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiyetisyenProfilFormu.Designer.cs">
+      <DependentUpon>DiyetisyenProfilFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiyetisyenRandevuTakipEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiyetisyenRandevuTakipEkrani.Designer.cs">
+      <DependentUpon>DiyetisyenRandevuTakipEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiyetisyenSoruCevapVermeEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiyetisyenSoruCevapVermeEkrani.Designer.cs">
+      <DependentUpon>DiyetisyenSoruCevapVermeEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiyetisyenTarifEklemeFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiyetisyenTarifEklemeFormu.Designer.cs">
+      <DependentUpon>DiyetisyenTarifEklemeFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EgzersizVeriGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgzersizVeriGirisEkrani.Designer.cs">
+      <DependentUpon>EgzersizVeriGirisEkrani.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GunlukTariflerEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GunlukTariflerEkrani.Designer.cs">
+      <DependentUpon>GunlukTariflerEkrani.cs</DependentUpon>
     </Compile>
     <Compile Include="OgunVerileriGirisEkrani.cs">
       <SubType>Form</SubType>
@@ -279,11 +369,56 @@
     <EmbeddedResource Include="DanisanAnketFormu.resx">
       <DependentUpon>DanisanAnketFormu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DanisanlarinEgzersizVerileriFormu.resx">
+      <DependentUpon>DanisanlarinEgzersizVerileriFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanisanlarinOgunVerileriniGoruntulemeForm.resx">
+      <DependentUpon>DanisanlarinOgunVerileriniGoruntulemeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanisanlarinOlcuVerilerininGoruntulenmesiFormu.resx">
+      <DependentUpon>DanisanlarinOlcuVerilerininGoruntulenmesiFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanisanlarinSuVerileriFormu.resx">
+      <DependentUpon>DanisanlarinSuVerileriFormu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DanisanProfilFormu.resx">
       <DependentUpon>DanisanProfilFormu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DanisanRandevuGoruntulemeEkrani.resx">
+      <DependentUpon>DanisanRandevuGoruntulemeEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanisanSuVerileriniGoruntuleme.resx">
+      <DependentUpon>DanisanSuVerileriniGoruntuleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiyetisyenAnketGoruntulemeEkrani.resx">
+      <DependentUpon>DiyetisyenAnketGoruntulemeEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiyetisyenCoinEklemeFormu.resx">
+      <DependentUpon>DiyetisyenCoinEklemeFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiyetisyeneSoruSormaEkrani.resx">
+      <DependentUpon>DiyetisyeneSoruSormaEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiyetisyenProfilFormu.resx">
+      <DependentUpon>DiyetisyenProfilFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiyetisyenRandevuTakipEkrani.resx">
+      <DependentUpon>DiyetisyenRandevuTakipEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiyetisyenSoruCevapVermeEkrani.resx">
+      <DependentUpon>DiyetisyenSoruCevapVermeEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiyetisyenTarifEklemeFormu.resx">
+      <DependentUpon>DiyetisyenTarifEklemeFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgzersizVeriGirisEkrani.resx">
+      <DependentUpon>EgzersizVeriGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GunlukTariflerEkrani.resx">
+      <DependentUpon>GunlukTariflerEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OgunVerileriGirisEkrani.resx">
       <DependentUpon>OgunVerileriGirisEkrani.cs</DependentUpon>
