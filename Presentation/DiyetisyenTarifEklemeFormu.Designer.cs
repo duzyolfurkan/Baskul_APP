@@ -31,15 +31,14 @@ namespace Presentation
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DiyetisyenTarifEklemeFormu));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_getir = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.cmb_ogunSecimi = new System.Windows.Forms.ComboBox();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.btn_ekle = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btn_cikis = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +47,6 @@ namespace Presentation
             this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.panel1.Controls.Add(this.richTextBox1);
             this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.btn_getir);
             this.panel1.Controls.Add(this.bunifuLabel4);
             this.panel1.Controls.Add(this.cmb_ogunSecimi);
             this.panel1.Controls.Add(this.bunifuLabel3);
@@ -60,31 +58,20 @@ namespace Presentation
             this.panel1.Size = new System.Drawing.Size(801, 487);
             this.panel1.TabIndex = 10;
             // 
-            // btn_getir
+            // richTextBox1
             // 
-            this.btn_getir.ActiveBorderThickness = 1;
-            this.btn_getir.ActiveCornerRadius = 20;
-            this.btn_getir.ActiveFillColor = System.Drawing.Color.Goldenrod;
-            this.btn_getir.ActiveForecolor = System.Drawing.Color.Black;
-            this.btn_getir.ActiveLineColor = System.Drawing.Color.Goldenrod;
-            this.btn_getir.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.btn_getir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_getir.BackgroundImage")));
-            this.btn_getir.ButtonText = "Soruları Getir";
-            this.btn_getir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_getir.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_getir.ForeColor = System.Drawing.Color.Black;
-            this.btn_getir.IdleBorderThickness = 1;
-            this.btn_getir.IdleCornerRadius = 20;
-            this.btn_getir.IdleFillColor = System.Drawing.Color.Gold;
-            this.btn_getir.IdleForecolor = System.Drawing.Color.Black;
-            this.btn_getir.IdleLineColor = System.Drawing.Color.Gold;
-            this.btn_getir.Location = new System.Drawing.Point(378, 25);
-            this.btn_getir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_getir.Name = "btn_getir";
-            this.btn_getir.Size = new System.Drawing.Size(123, 36);
-            this.btn_getir.TabIndex = 64;
-            this.btn_getir.TabStop = false;
-            this.btn_getir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.richTextBox1.Location = new System.Drawing.Point(12, 85);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(776, 350);
+            this.richTextBox1.TabIndex = 66;
+            this.richTextBox1.Text = "";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(199, 34);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(161, 20);
+            this.textBox1.TabIndex = 65;
             // 
             // bunifuLabel4
             // 
@@ -118,9 +105,9 @@ namespace Presentation
             this.bunifuLabel3.Location = new System.Drawing.Point(12, 12);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(68, 16);
+            this.bunifuLabel3.Size = new System.Drawing.Size(82, 16);
             this.bunifuLabel3.TabIndex = 60;
-            this.bunifuLabel3.Text = "Öğün Seçimi";
+            this.bunifuLabel3.Text = "Kategori Seçimi";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
@@ -191,21 +178,6 @@ namespace Presentation
             this.btn_cikis.TabStop = false;
             this.btn_cikis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(199, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(161, 20);
-            this.textBox1.TabIndex = 65;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 85);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(776, 350);
-            this.richTextBox1.TabIndex = 66;
-            this.richTextBox1.Text = "";
-            // 
             // DiyetisyenTarifEklemeFormu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -223,7 +195,6 @@ namespace Presentation
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuThinButton2 btn_getir;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
         private System.Windows.Forms.ComboBox cmb_ogunSecimi;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;

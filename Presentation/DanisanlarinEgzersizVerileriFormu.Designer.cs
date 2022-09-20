@@ -37,9 +37,7 @@ namespace Presentation
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dgv_yanitTarihi = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.btn_getir = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.dtp_egzersizTarih = new Bunifu.UI.WinForms.BunifuDatePicker();
@@ -54,26 +52,9 @@ namespace Presentation
             ((System.ComponentModel.ISupportInitialize)(this.dgv_egzersizVerileri)).BeginInit();
             this.SuspendLayout();
             // 
-            // bunifuLabel5
-            // 
-            this.bunifuLabel5.AllowParentOverrides = false;
-            this.bunifuLabel5.AutoEllipsis = false;
-            this.bunifuLabel5.CursorType = null;
-            this.bunifuLabel5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bunifuLabel5.Location = new System.Drawing.Point(12, 327);
-            this.bunifuLabel5.Name = "bunifuLabel5";
-            this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(62, 16);
-            this.bunifuLabel5.TabIndex = 66;
-            this.bunifuLabel5.Text = "Tarih Seçimi";
-            this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.panel1.Controls.Add(this.bunifuLabel5);
-            this.panel1.Controls.Add(this.dgv_yanitTarihi);
             this.panel1.Controls.Add(this.btn_getir);
             this.panel1.Controls.Add(this.bunifuLabel4);
             this.panel1.Controls.Add(this.dtp_egzersizTarih);
@@ -88,31 +69,6 @@ namespace Presentation
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(801, 491);
             this.panel1.TabIndex = 9;
-            // 
-            // dgv_yanitTarihi
-            // 
-            this.dgv_yanitTarihi.BackColor = System.Drawing.Color.Transparent;
-            this.dgv_yanitTarihi.BorderColor = System.Drawing.Color.Silver;
-            this.dgv_yanitTarihi.BorderRadius = 1;
-            this.dgv_yanitTarihi.Color = System.Drawing.Color.Silver;
-            this.dgv_yanitTarihi.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
-            this.dgv_yanitTarihi.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.dgv_yanitTarihi.DisabledColor = System.Drawing.Color.Gray;
-            this.dgv_yanitTarihi.DisplayWeekNumbers = false;
-            this.dgv_yanitTarihi.DPHeight = 0;
-            this.dgv_yanitTarihi.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dgv_yanitTarihi.FillDatePicker = false;
-            this.dgv_yanitTarihi.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dgv_yanitTarihi.ForeColor = System.Drawing.Color.Black;
-            this.dgv_yanitTarihi.Icon = ((System.Drawing.Image)(resources.GetObject("dgv_yanitTarihi.Icon")));
-            this.dgv_yanitTarihi.IconColor = System.Drawing.Color.Gray;
-            this.dgv_yanitTarihi.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.dgv_yanitTarihi.LeftTextMargin = 5;
-            this.dgv_yanitTarihi.Location = new System.Drawing.Point(12, 345);
-            this.dgv_yanitTarihi.MinimumSize = new System.Drawing.Size(4, 32);
-            this.dgv_yanitTarihi.Name = "dgv_yanitTarihi";
-            this.dgv_yanitTarihi.Size = new System.Drawing.Size(172, 32);
-            this.dgv_yanitTarihi.TabIndex = 65;
             // 
             // btn_getir
             // 
@@ -348,7 +304,7 @@ namespace Presentation
             this.dgv_egzersizVerileri.RowHeadersVisible = false;
             this.dgv_egzersizVerileri.RowTemplate.Height = 40;
             this.dgv_egzersizVerileri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_egzersizVerileri.Size = new System.Drawing.Size(776, 244);
+            this.dgv_egzersizVerileri.Size = new System.Drawing.Size(776, 297);
             this.dgv_egzersizVerileri.TabIndex = 55;
             this.dgv_egzersizVerileri.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -420,10 +376,7 @@ namespace Presentation
         }
 
         #endregion
-
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.UI.WinForms.BunifuDatePicker dgv_yanitTarihi;
         private Bunifu.Framework.UI.BunifuThinButton2 btn_getir;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
         private Bunifu.UI.WinForms.BunifuDatePicker dtp_egzersizTarih;
