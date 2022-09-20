@@ -18,8 +18,8 @@ namespace Entities.Abstract
         byte[] ProfilResmi { get; set; }
 
         //Tablo referanslamaları
-        AnketBilgileri AnketBilgileri { get; set; }
-        CoinBilgileri CoinBilgileri { get; set; }
+        List<AnketBilgileri> AnketBilgileris { get; set; }
+        List<CoinBilgileri> CoinBilgileris { get; set; }
         DiyetisyenKullaniciBilgileri DiyetisyenKullaniciBilgileri { get; set; }
         List<SuIcmeVeriGirisleri> SuIcmeVeriGirisleris { get; set; }
         List<SuIcmeVeriYorumlari> SuIcmeVeriYorumlaris { get; set; }

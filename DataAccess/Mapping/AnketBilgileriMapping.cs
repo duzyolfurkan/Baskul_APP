@@ -53,9 +53,10 @@ namespace DataAccess.Mapping
             this.Property(a => a.EkNot).HasColumnType("nvarchar").HasMaxLength(100).IsUnicode(true).IsRequired();
             this.Property(a => a.DiyetistenYorumu).HasColumnType("nvarchar").HasMaxLength(200).IsUnicode(true).IsRequired();
 
-            //Danışan bilgileri ile ilişkinin bir kısmı
-            this.HasRequired(ank => ank.DanisanKullaniciBilgileri)
-                .WithRequiredPrincipal(dan => dan.AnketBilgileri);
+            //Danışan bilgileri ile ilişkinin çok kısmı
+            this.HasRequired(a => a.DanisanKullaniciBilgileri)
+                .WithMany(dkb => dkb.AnketBilgileris)
+                .HasForeignKey(a => a.DanisanID);
 
         }
     }

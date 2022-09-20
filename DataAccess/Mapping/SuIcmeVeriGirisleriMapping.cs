@@ -1,6 +1,7 @@
 ﻿using Entities.Concrate;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,9 @@ namespace DataAccess.Mapping
     {
         public SuIcmeVeriGirisleriMapping()
         {
-            this.Property(si => si.Tarih).HasColumnType("datetime2").IsRequired();
+            this.HasKey(si => si.Tarih);
+            this.Property(si => si.Tarih).IsRequired();
+
             this.Property(si => si.DanisanID).IsRequired();
             this.Property(si => si.BardakHacmi).IsRequired();
             this.Property(si => si.BardakAdet).IsRequired();

@@ -9,6 +9,7 @@ namespace Entities.Abstract
 {
     public interface ICoinBilgileri
     {
+        int CoinID { get; set; }
         int DanisanID { get; set; }
         int CoinMiktari { get; set; }
 

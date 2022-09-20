@@ -1,6 +1,7 @@
 ﻿using Entities.Concrate;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,9 @@ namespace DataAccess.Mapping
     {
         public GunlukOgunYorumlariMapping()
         {
-            this.Property(oy => oy.Tarih).HasColumnType("datetime2").IsRequired();
+            this.HasKey(oy => oy.Tarih);
+            this.Property(oy => oy.Tarih).IsRequired();
+
             this.Property(oy => oy.DanisanID).IsRequired();
             this.Property(oy => oy.DiyetisyenYorumu).HasColumnType("nvarchar").HasMaxLength(200).IsUnicode(true).IsRequired();
 

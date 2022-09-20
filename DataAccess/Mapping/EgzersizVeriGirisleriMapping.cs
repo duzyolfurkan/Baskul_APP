@@ -1,6 +1,7 @@
 ﻿using Entities.Concrate;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,9 @@ namespace DataAccess.Mapping
     {
         public EgzersizVeriGirisleriMapping()
         {
-            this.Property(eg => eg.Tarih).HasColumnType("datetime2").IsRequired();
+            this.HasKey(eg => eg.Tarih);
+            this.Property(eg => eg.Tarih).IsRequired();
+
             this.Property(eg => eg.DanisanID).IsRequired();
             this.Property(eg => eg.EgzersizAdi).HasColumnType("nvarchar").HasMaxLength(30).IsUnicode(true).IsRequired();
             this.Property(eg => eg.EgzersizSüresi).IsRequired();

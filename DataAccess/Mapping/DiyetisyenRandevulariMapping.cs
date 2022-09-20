@@ -28,7 +28,7 @@ namespace DataAccess.Mapping
                 .HasForeignKey(dr => dr.DanisanID);
 
             //DiyetisyenKullaniciBilgileri ile bire çok bağlantının çok kısmı
-            this.HasRequired(dr => dr.DanisanKullaniciBilgileri)
+            this.HasRequired(dr => dr.DiyetisyenKullaniciBilgileri)
                 .WithMany(dyt => dyt.DiyetisyenRandevularis)
                 .HasForeignKey(dr => dr.DiyetisyenID);
         }

@@ -3,6 +3,7 @@ using Entities.Concrate;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -53,6 +54,8 @@ namespace DataAccess.Context
             modelBuilder.Configurations.Add(new SoruCevapVerileriMapping());
             modelBuilder.Configurations.Add(new SuIcmeVeriGirisleriMapping());
             modelBuilder.Configurations.Add(new SuIcmeVeriYorumlariMapping());
+
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
         }
 
 

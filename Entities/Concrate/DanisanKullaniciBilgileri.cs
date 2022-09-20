@@ -17,8 +17,8 @@ namespace Entities.Concrate
         public string Soyadi { get; set; }
         public string Sifre { get; set; }
         public byte[] ProfilResmi { get; set; }
-        public AnketBilgileri AnketBilgileri { get; set; }
-        public CoinBilgileri CoinBilgileri { get; set; }
+        public List<AnketBilgileri> AnketBilgileris { get; set; }
+        public List<CoinBilgileri> CoinBilgileris { get; set; }
         public DiyetisyenKullaniciBilgileri DiyetisyenKullaniciBilgileri { get; set; }
         public List<SuIcmeVeriGirisleri> SuIcmeVeriGirisleris { get; set; }
         public List<SuIcmeVeriYorumlari> SuIcmeVeriYorumlaris { get; set; }

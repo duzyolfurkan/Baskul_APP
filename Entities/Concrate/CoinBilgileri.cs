@@ -10,6 +10,7 @@ namespace Entities.Concrate
 {
     public class CoinBilgileri : IBaseEntity, ICoinBilgileri
     {
+        public int CoinID { get; set; }
         public int DanisanID { get; set; }
         public int CoinMiktari { get; set; }
         public DanisanKullaniciBilgileri DanisanKullaniciBilgileri { get; set; }

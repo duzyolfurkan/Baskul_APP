@@ -30,8 +30,9 @@ namespace DataAccess.Mapping
                 .HasForeignKey(di => di.DiyetisyenID);
 
             //Anket bilgileri ile ilişkinin bir kısmı
-            this.HasRequired(dan => dan.AnketBilgileri)
-                .WithRequiredPrincipal(ank => ank.DanisanKullaniciBilgileri);
+            this.HasMany(dkb => dkb.AnketBilgileris)
+                .WithRequired(a => a.DanisanKullaniciBilgileri)
+                .HasForeignKey(a => a.DanisanID);
 
             //Günlük öğün girişleri ile bağlantının bir kısmı
             this.HasMany(dan => dan.GunlukOgunGirisleris)
@@ -58,15 +59,16 @@ namespace DataAccess.Mapping
              .WithRequired(g => g.DanisanKullaniciBilgileri)
              .HasForeignKey(g => g.DanisanID);
 
-            //Danışan bilgileri ile ilişkinin bir kısmı
-            this.HasRequired(dan => dan.CoinBilgileri)
-                .WithRequiredPrincipal(c => c.DanisanKullaniciBilgileri);
+            //Danışan bilgileri ile coin ilişkinin bir kısmı
+            this.HasMany(dkb => dkb.CoinBilgileris)
+                .WithRequired(c => c.DanisanKullaniciBilgileri)
+                .HasForeignKey(c => c.DanisanID);
 
             //diyetisyen randevuları ile bire çok bağlantının "bir" kısmı
             this.HasMany(dkb => dkb.DiyetisyenRandevularis)
                 .WithRequired(dr => dr.DanisanKullaniciBilgileri)
                 .HasForeignKey(dr => dr.DanisanID);
-
+                
             //Danışan ile egzersiz veri girişleri bireçok bağlantısının bir kısmı
             this.HasMany(dkb => dkb.EgzersizVeriGirisleris)
                 .WithRequired(e => e.DanisanKullaniciBilgileri)
