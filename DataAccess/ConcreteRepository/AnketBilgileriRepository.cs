@@ -12,7 +12,7 @@ namespace DataAccess.ConcreteRepository
     {
         public AnketBilgileriRepository(BaskulAppDbContext baskulAppDbContext) : base(baskulAppDbContext)
         {
-            //base repo
+            //base repo paylaşıldı.
         }
     }
 }
